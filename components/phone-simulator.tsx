@@ -430,7 +430,6 @@ export default function PhoneSimulator({ onSecretDoorOpen }) {
             onTestInfoFragment={isDevelopment ? handleTestInfoFragment : null}
             isFirstCollection={isFirstCollection}
             onTriggerChapterEnd={isDevelopment ? handleTriggerChapterEnd : null}
-            onTestGameOver={isDevelopment ? handleTestGameOver : null}
           />
         )}
 
@@ -497,7 +496,6 @@ export default function PhoneSimulator({ onSecretDoorOpen }) {
             onTestInfoFragment={isDevelopment ? handleTestInfoFragment : null}
             isFirstCollection={isFirstCollection}
             onTriggerChapterEnd={isDevelopment ? handleTriggerChapterEnd : null}
-            onTestGameOver={isDevelopment ? handleTestGameOver : null}
           />
         )}
 

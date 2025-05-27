@@ -23,7 +23,6 @@ export default function ChatScreen({
   onTestInfoFragment = null,
   isFirstCollection = false,
   onTriggerChapterEnd = null,
-  onTestGameOver = null, // 新增：测试游戏结束的回调
 }) {
   const messagesEndRef = useRef(null)
   const messageContainerRef = useRef(null)
@@ -187,16 +186,6 @@ export default function ChatScreen({
                   title="章节结束"
                 >
                   <Film size={14} />
-                </button>
-              )}
-
-              {onTestGameOver && (
-                <button
-                  onClick={onTestGameOver}
-                  className="ml-2 bg-zinc-800 hover:bg-zinc-700 text-zinc-300 p-1.5 rounded flex items-center justify-center"
-                  title="游戏结束"
-                >
-                  <AlertTriangle size={14} />
                 </button>
               )}
             </div>
